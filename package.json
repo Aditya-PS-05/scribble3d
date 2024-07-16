@@ -1,0 +1,22 @@
+{
+  "name": "scribble3d",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky",
+    "format": "prettier . --write",
+    "web": "cd web && yarn dev",
+    "cms": "cd cms && yarn dev",
+    "dev": "(yarn cms) & (yarn web)",
+    "open:web": "open http://localhost:3000",
+    "open:cms": "open http://localhost:3001",
+    "open:both": "(yarn open:cms) && (yarn open:web)"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "husky": "^9.0.11"
+  }
+}
