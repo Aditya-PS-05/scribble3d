@@ -25,7 +25,7 @@ const ProductCard: React.FC<{ product: IProduct }> = ({ product }) => {
   };
 
   return (
-    <div className="border p-4 rounded-lg shadow-md relative bg-white w-[300px]">
+    <div className="border p-4 rounded-lg shadow-md relative bg-white w-[300px] ">
       {product.customisable && (
         <span className="bg-white text-gray-500 text-sm font-semibold px-2 py-1 rounded-full absolute top-6 right-6 border-b-4 border-gray-300">
           *Customisable
